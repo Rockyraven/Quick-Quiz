@@ -9,7 +9,8 @@
     padding: 10px;
     line-height: 1.9rem;
     box-shadow: 0px 0px 6px rgb(138, 137, 137);
-    margin: 5rem;
+    justify-content: center;
+    margin: 3rem;
 }
 .quiz-card-container img{
     width: 100%;
@@ -27,7 +28,13 @@
     width: 100%;
     font-size: 1.5rem ;
     border: 1px solid;
+    text-decoration: inherit;
+    
+}
+.play-button:hover{
+    background-color: var(--default-color);
 }
 .category-card{
     display: flex;
+    flex-wrap: wrap;
 }

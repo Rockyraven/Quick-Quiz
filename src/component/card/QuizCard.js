@@ -1,5 +1,4 @@
 import React from 'react'
-// import {math} from '../../../assets/math-image.jpg'
 import './quizcard.css'
 import {category1} from  'assets'
 

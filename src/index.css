@@ -1,0 +1,16 @@
+:root{
+    --primary-color: #adabab;
+    --default-color: white;
+    --loginbackground-color: #dbdbdb;
+    --signbackground-color: #f3f3f3;
+    --footerbackground-color: #353434;
+    --buybutton-color: #747272;
+    --discount-color: #1ac01a;
+    --wislist-color: red;
+    --card-border: #e9e7e7;
+    --background-color: #f3f2f2;
+}
+body{
+    background-color: var(--background-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
