@@ -3,16 +3,11 @@ import { useQuestion } from "context/questionContext";
 import './quizpage.css'
 
 export const QuizPage = () => {
-
   const [qNo, setQNo] = useState(0);
   const [score, setScore] = useState(0);
-
   const [quest, setQuestion] = useState();
-
   const [option, setOption] = useState();
-
   const [selected, setSelected] = useState(null);
-
   const getNextQuestion = () => {
       setQNo(qNo + 1);
       setSelected(null)
@@ -93,35 +88,6 @@ export const QuizPage = () => {
         </button>
         </div>
         </div>
-      {/* <div className="question-container">
-        <div className="heading">
-          <h1> Question {qNo + 1}</h1>
-          <div className="score">score: {score}</div>
-        </div>
-        <hr />
-        
-
-        <h2 className="question"> {quest}</h2>
-        <div className="option-container">
-          {option &&
-            option.map((i,j) => (
-              <div>
-                <button
-                  className={`singleOption  ${selected && handleSelect(i)}`}
-                  key={j}
-                  onClick={() => handleCheck(i)}
-                  disabled={selected}
-                >
-                  {i}
-                </button>
-              </div>
-            ))}
-        </div>
-        <button onClick={getNextQuestion} className="next-button">
-          NEXT
-        </button>
-      </div> */}
-      this is quiz
     </>
   );
 };

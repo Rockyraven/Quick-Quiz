@@ -14,7 +14,6 @@ const QuestionProvider = ({children}) => {
         .then(response => response.json() )
         .then( data => setQuestionCategoryList(data.results))
     }
-    // console.log(questionCategoryList)
     return(
         <questionContext.Provider value={{ fetchQuestion, questionCategoryList }}>
             {children}
