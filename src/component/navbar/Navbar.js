@@ -10,7 +10,7 @@ export const Navbar = () => {
     <div className="search-bar">
         <input type="text" className="search-input-box" placeholder=" Seach for latest"/>
     </div>  
-        <button className='search-button'><i class="fa fa-search"></i></button>
+        <button className='search-button'><i className="fa fa-search"></i></button>
     <div className="login-section">
         <Link to="#">Guidline</Link>
         <Link to="#" className="login">Login</Link>

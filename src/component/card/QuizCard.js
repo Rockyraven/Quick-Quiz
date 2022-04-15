@@ -1,14 +1,13 @@
 import React from 'react'
 import './quizcard.css'
-import {category1} from  'assets'
+import { Link } from 'react-router-dom'
 
-export const QuizCard = ({heading, about, Image}) => {
+export const QuizCard = ({title, image,_id}) => {
   return (
     <div className='quiz-card-container'>
-        <img src={category1} alt="" />
-        <p className='card-heading'>{heading}</p>
-        <p className="card-description">{about}</p>
-        <a href="#" className='play-button'>Play Now</a>
+        <img src={image} alt="quizcard" />
+        <p className='card-heading'>{title}</p>
+        <Link to={`/guideline/${_id}`} className='play-button'>Play Now</Link>
     </div>
   )
 }
