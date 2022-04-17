@@ -4,38 +4,40 @@ import "./quizpage.css";
 import { useNavigate } from "react-router-dom";
 
 export const QuizPage = () => {
-  const { questionCategoryList, resultInfo, setResultInfo } = useQuestion();
+  const { questionCategoryList, setResultInfo, score, setScore } =
+    useQuestion();
   const navigate = useNavigate();
   const [qNo, setQNo] = useState(0);
-  const [score, setScore] = useState(0);
   const [quest, setQuestion] = useState("");
   const [option, setOption] = useState([]);
   const [selected, setSelected] = useState(null);
 
   const getNextQuestion = () => {
-    // if(qNo === 10 ){
-    //   console.log("result")
-    //   navigate('/result');
-    // }
-    // else{
+    const resultInfoDetail = {
+      question: quest,
+      options: option,
+      selectedOption: selected,
+    };
+    setResultInfo((prev) => [...prev, resultInfoDetail]);
+    if (qNo === 9) {
+      navigate("/result");
+    } else {
       setQNo(qNo + 1);
       setSelected(null);
-    // }
-
+    }
   };
-  console.log(qNo)
 
   useEffect(() => {
-    if(qNo<questionCategoryList.length)
-    setQuestion(questionCategoryList[qNo].question);
+    if (qNo < questionCategoryList.length)
+      setQuestion(questionCategoryList[qNo].question);
   }, [qNo]);
 
   useEffect(() => {
     setOption(
       questionCategoryList &&
         handleShuffle([
-          questionCategoryList[qNo]?.correct_answer,
-          ...questionCategoryList[qNo]?.incorrect_answers,
+          questionCategoryList[qNo].correct_answer,
+          ...questionCategoryList[qNo].incorrect_answers,
         ])
     );
   }, [qNo]);
@@ -47,32 +49,24 @@ export const QuizPage = () => {
   const handleSelect = (option) => {
     if (
       selected === option &&
-      option === questionCategoryList[qNo]?.correct_answer
+      option === questionCategoryList[qNo].correct_answer
     ) {
       return "correct";
     }
     if (
       selected === option &&
-      option !== questionCategoryList[qNo]?.correct_answer
+      option !== questionCategoryList[qNo].correct_answer
     ) {
       return "wrong";
     }
-    if (option === questionCategoryList[qNo]?.correct_answer) {
+    if (option === questionCategoryList[qNo].correct_answer) {
       return "correct";
     }
   };
   const handleCheck = (i) => {
     setSelected(i);
-    if (i === questionCategoryList[qNo]?.correct_answer) setScore(score + 1);
+    if (i === questionCategoryList[qNo].correct_answer) setScore(score + 1);
   };
-  useEffect(() => {
-    const resultInfoDetail = {
-      quesion: quest,
-      options: option,
-      selectedOption: selected,
-    };
-    setResultInfo((prev) => [...prev, resultInfoDetail]);
-  }, [selected, option, quest]);
 
   return (
     <>
@@ -89,8 +83,7 @@ export const QuizPage = () => {
             <hr />
             {option &&
               option.map((i, j) => (
-                <div  key={j}>
-                 
+                <div key={j}>
                   <button
                     className={`singleOption  ${selected && handleSelect(i)}`}
                     onClick={() => handleCheck(i)}
