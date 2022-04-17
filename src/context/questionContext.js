@@ -5,7 +5,10 @@ const { createContext, useContext, useState } = require("react");
 const questionContext = createContext();
 
 const QuestionProvider = ({children}) => {
-    const [ questionCategoryList, setQuestionCategoryList ] = useState();
+    const [ questionCategoryList, setQuestionCategoryList ] = useState([]);
+    const [ resultInfo, setResultInfo ] = useState([]);
+  const [score, setScore] = useState(0);
+
 
     const fetchQuestion = (questionID) => {
         let questionCategoryExit = categories.find((item) => item._id === questionID)
@@ -15,7 +18,7 @@ const QuestionProvider = ({children}) => {
         .then( data => setQuestionCategoryList(data.results))
     }
     return(
-        <questionContext.Provider value={{ fetchQuestion, questionCategoryList }}>
+        <questionContext.Provider value={{ fetchQuestion, questionCategoryList, resultInfo, setResultInfo, score, setScore }}>
             {children}
         </questionContext.Provider>
     )
