@@ -52,18 +52,20 @@ Give it a try today.
 
 - redirect to Quiz Page , click on Play Now button
 - [HomePage](https://quickquiz-ui.netlify.app/)
-- 
+
+### GuideLine Page
+- redirect tp guideline page where quiz rule are present
+- [GuideLine](https://quickquiz-ui.netlify.app/guideline)
 
 ### In Quiz Page
 
   - Hera Score From this you can know your performance.
-[QuizPage](https://quickquiz-ui.netlify.app/quiz)
+
 
 ### In Result page
 
 - After Participation of Quiz
 - You can check your performance.
-[Result](https://quickquiz-ui.netlify.app/result)
 
 ---
     
