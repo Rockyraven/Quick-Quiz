@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import {category1, math, politics, history, sports } from '../assets'
+import {category1, math, politics, history, sports,animal, gk } from '../assets'
 export const categories = [ 
     {
     _id: uuid(),
@@ -27,14 +27,14 @@ export const categories = [
     },
     {
     _id: uuid(),
-    name: "Amimal",
-    image: history,
+    name: "Animal",
+    image: animal,
     link: "https://opentdb.com/api.php?amount=10&category=27&difficulty=easy&type=multiple"
     },
     {
     _id: uuid(),
     name: "GK",
-    image: history,
+    image: gk,
     link: "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
     }
 ]
