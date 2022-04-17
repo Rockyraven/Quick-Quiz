@@ -1,14 +1,16 @@
-import { QuestionProvider } from 'context/QuestionContext'
-import React from 'react'
-import  ReactDOM  from 'react-dom'
-import { App } from './App'
-import './index.css'
+import { QuestionProvider } from "context/questionContext";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { App } from "./App";
+import "./index.css";
 
 ReactDOM.render(
-<QuestionProvider>
+  <BrowserRouter>
+    <QuestionProvider>
+      <App />
+    </QuestionProvider>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
-<App/>
-</QuestionProvider>
-
-
-,document.getElementById('root'))

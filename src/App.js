@@ -1,19 +1,23 @@
-import { Footer, Navbar } from 'component'
-import { Homepage } from 'pages'
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Footer, Navbar, StartQuiz } from 'component'
+import {  GuidLine, Homepage, QuizPage, ResultPage } from 'pages'
+import { Route, Routes } from 'react-router-dom'
 
 
 export const App = () => {
   return (
     <>
-      <BrowserRouter>
+     
           <Navbar />
             <Routes>
               <Route path='/' element={<Homepage />} />
+              <Route path='/quizpage' element={<QuizPage/>} />
+              <Route path='/guideline' element={<GuidLine/>} >
+              <Route path=":guidelineID" element = {<StartQuiz/>}/>
+              </Route>
+              <Route path='/result' element = {<ResultPage/>} />
             </Routes>
           <Footer />
-      </BrowserRouter>
     </>
   )
 }

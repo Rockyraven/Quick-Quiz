@@ -1,70 +1,104 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  
+# [QuickQuiz](https://app.netlify.com/sites/boostweb-temp/settings/domain) 
+##  Welcome To QuickQuiz World
+  
+<!--   ![image](https://user-images.githubusercontent.com/91511639/163553337-079970fc-ef46-4521-a415-fd158501f95d.png) -->
 
-## Available Scripts
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)<br><br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1fe7d1f-75e9-4c30-bd3a-8df76d74c08c/deploy-status)](https://app.netlify.com/sites/neos-ui/deploys)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 About 
 
-### `npm test`
+QuickQuiz is an Quiz platform for the learner. Here you can participate for Quiz.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Give it a try today.
+---
 
-### `npm run build`
+---
+# 🚀 Features It has
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Categories
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+     Mathematics
+     Politices
+     Sports
+     History
+     Animal
+      
+    
+### In Header
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- navigate to the Home page back, click on the QuickQuiz logo
+- navigate to the Login Page,  click on the Login icon
+- navigate to the GuideLine Page,  click on the GuideLine icon
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### In Footer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- it contains copyright information, contact details, social media link, etc.
+- connect with me
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### In Home
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- redirect to Quiz Page , click on Play Now button
 
-## Learn More
+### In Quiz Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - Hera Score From this you can know your performance.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### In Result page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- After Participation of Quiz
+- You can check your performance.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
+    
+# ✨ Features You will See in Future
+Mobile Responsive <br>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### 🔌 Getting Started
+- clone the repository on your local machine with the command below in your terminal, and cd into the shoeshopper-react folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+      git clone https://github.com/Rockyraven/Quick-Quiz.git
 
-### Deployment
+      
+- install dependencies (if you are using yarn then do with that)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+      npm install
+      
+- start the server
 
-### `npm run build` fails to minify
+      npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+
+## :computer:Connect with me 	:point_down:
+
+<a href="https://www.instagram.com/rockykumar636/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+<a href="https://twitter.com/ImRocky7277"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/rocky-abb69921b/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
+
+
+
+
+
+
+
