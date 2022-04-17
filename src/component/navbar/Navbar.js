@@ -12,7 +12,7 @@ export const Navbar = () => {
     </div>  
         <button className='search-button'><i className="fa fa-search"></i></button>
     <div className="login-section">
-        <Link to="#">Guidline</Link>
+        <Link to="/guideline">Guidline</Link>
         <Link to="#" className="login">Login</Link>
     </div>
 </nav>
