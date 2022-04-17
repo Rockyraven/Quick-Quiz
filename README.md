@@ -1,7 +1,7 @@
 
 <div align="center">
   
-# [QuickQuiz](https://app.netlify.com/sites/boostweb-temp/settings/domain) 
+# [QuickQuiz](https://quickquiz-ui.netlify.app/) 
 ##  Welcome To QuickQuiz World
   
 <!--   ![image](https://user-images.githubusercontent.com/91511639/163553337-079970fc-ef46-4521-a415-fd158501f95d.png) -->
@@ -51,17 +51,19 @@ Give it a try today.
 ### In Home
 
 - redirect to Quiz Page , click on Play Now button
+- [HomePage](https://quickquiz-ui.netlify.app/)
+- 
 
 ### In Quiz Page
 
   - Hera Score From this you can know your performance.
-
+[QuizPage](https://quickquiz-ui.netlify.app/quiz)
 
 ### In Result page
 
 - After Participation of Quiz
 - You can check your performance.
-
+[Result](https://quickquiz-ui.netlify.app/result)
 
 ---
     
